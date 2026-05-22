@@ -1,13 +1,13 @@
-import Chat from "@/components/Chat";
+import AgentChat from "@/components/AgentChat";
 
 export default function SamiPage() {
   return (
-    <Chat
-      agent="sami"
+    <AgentChat
+      apiPath="/api/sami"
       name="Sami"
       emoji="🎨"
       gradient="from-violet-600 to-indigo-600"
-      placeholder="Demandez-moi de concevoir votre site, choisir des couleurs, créer un layout..."
+      placeholder="Ex: Rends la page d'accueil plus moderne, améliore le design du formulaire..."
     />
   );
 }
