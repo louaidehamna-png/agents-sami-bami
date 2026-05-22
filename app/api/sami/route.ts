@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import Groq from "groq-sdk";
 
+export const maxDuration = 60;
+
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
 const REPO = "louaidehamna-png/Premier-projet";
